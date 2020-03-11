@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Online Exam </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+			var mark2=localStorage.getItem("totalmark");
+
+	// function submitAnswers() {
+ // 			var form = document.quizForm;
+	// 		var q6 = form.elements['answer6'].value;
+	// 		var q7 = form.elements['answer7'].value;
+	// 		var q8 = form.elements['answer8'].value;
+	// 		var q9 = form.elements['answer9'].value;
+	// 		var q10 = form.elements['answer10'].value;
+			
+			// if(q6 == "7/8"){
+			// 	mark+=10;
+			// }
+			// if(q7 == "22/45"){
+			// 	mark+=10;
+			// }
+			// if(q8 == "5/9"){
+			// 	mark+=10;
+			// }
+			// if(q9 == "2 4/5"){
+			// 	mark+=10;
+			// }
+			// if(q10 == "18/25"){
+			// 	mark+=10;
+			// }
+			// window.location.href='result.html?mark='+mark;
+			// return false;
+		// }
+		alert(mark2);
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #009688" >
+ <h6 style="color: white" class="pl-5"> <img src="img/logo.jpg" width="40" height="40">
+  &nbsp; Logic And Math Quiz</h6>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center" id="navbarResponsive" >
+        <ul class="navbar-nav ml-auto">
+          <li  class="nav-item ">
+            <a id="color" class="nav-link pt-3 px-0 px-lg-3 text-white js-scroll-trigger font-weight-bolder"  href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a id="color"  class="nav-link pt-3 px-0 px-lg-3 text-white js-scroll-trigger  font-weight-bolder" href="about.html">About</a>
+          </li>                    
+          <li class="nav-item mx-0 mx-lg-1">
+            <a id="color"  class="nav-link pt-3 px-0 px-lg-3 text-white js-scroll-trigger font-weight-bolder" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+</nav>
+</header>
+
+<section>
+
+	<div class="container">
+		<h2 class="text-center" style="color: #009688;">Continue ... </h2>
+		<div class="row mt-5 p-5" style="background-color: #009688; font-size: 20px">
+		<form name="quizForm" onsubmit="return submitAnswers()">
+		<label>Q6 : 3/4 + 1/8 =  </label><br>
+		<input type="radio" name="answer6" required="required" value="7/8"> 7/8<br>
+		<input type="radio" name="answer6" required="required" value="4/12"> 4/12<br>
+		<input type="radio" name="answer6" required="required" value="1/2"> 1/2<br>
+        <br>
+</form>
+		</div>
+		<br>
+        <div class="row p-5" style=" font-size: 20px">
+		<form name="quizForm" onsubmit="return submitAnswers()">
+		<label>Q7 : 3/5 - 1/9 =  </label><br>
+		<input type="radio" name="answer7" required="required" value="21/45"> 21/45<br>
+		<input type="radio" name="answer7" required="required" value="22/45"> 22/45<br>
+		<input type="radio" name="answer7" required="required" value="23/45"> 23/45<br>
+        <br>
+</form>
+		</div>
+		<div class="row p-5" style="background-color: #009688; font-size: 20px">
+		<form name="quizForm" onsubmit="return submitAnswers()">
+		<label>Q8 : Write the answer to the following in its simplest form : 5/6 * 2/3 </label><br>
+		<input type="radio" name="answer8" required="required" value="10/18"> 10/18<br>
+		<input type="radio" name="answer8" required="required" value="7/9"> 7/9<br>
+		<input type="radio" name="answer8" required="required" value="5/9"> 5/9<br>
+        <br>
+</form>
+		</div>
+		<div class="row p-5" style=" font-size: 20px">
+		<form name="quizForm" onsubmit="return submitAnswers()">
+		<label>Q9 : Write the answer to the following as a mixed number : 7/10 % 1/4 = </label><br>
+		<input type="radio" name="answer9" required="required" value="7/40"> 7/40<br>
+		<input type="radio" name="answer9" required="required" value="28/10"> 28/10<br>
+		<input type="radio" name="answer9" required="required" value="12 4/5"> 2 4/5<br>
+        <br>
+</form>
+		</div>
+         <div class="row p-5" style="background-color: #009688; font-size: 20px">
+		<form name="quizForm" onsubmit="return submitAnswers()">
+		<label>Q10 : Andy gets {7} out of {25} questions wrong in his maths test. What fraction of the questions does Andy answer correctly ? </label><br>
+		<input type="radio" name="answer10" required="required" value="7/25"> 7/25<br>
+		<input type="radio" name="answer10" required="required" value="18/25"> 18/25<br>
+		<input type="radio" name="answer10" required="required" value="7/18"> 7/18<br>
+        <br>
+</form>
+		</div>
+
+         <br>
+         <a href="result.html"><button type="button" class="btn btn-primary ml-500 btn-lg mt-20 mb-5" style="background-color:#009688 ">Finish</button></a>
+
+
+	</div>
+
+</section>
+
+
+<div id="results"></div>
+
+
+
+
+<footer class=" mt-5 pt-2 text-white text-center"  style="background-color:  #008073;">
+    <div class="container text-center">
+  <div class="text-white text-center pb-3" style="background-color:  #008073;">All material on this website is copyrighted.@Copy Write 2020</div>
+</div>
+  </footer>
+  
+</body>
+</html>
